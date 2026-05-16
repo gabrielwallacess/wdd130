@@ -1,5 +1,10 @@
+:root {
+    --cor-primaria: darkblue;
+    --cor-fundo: #eee; 
+}
+
 h1 {
-    color: darkblue;
+    color: var(--cor-primaria);
 }
 
 main {
@@ -7,12 +12,12 @@ main {
 }
 
 nav {
-    background-color: #eee;
+    background-color: var(--cor-fundo);
     padding: 1rem;
 }
 
 nav a {
-    color: darkblue;
+    color: var(--cor-primaria);
     padding: 0.5rem;
     display: block;
 }
@@ -22,7 +27,7 @@ aside {
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 20%); /* 1 */
     padding: 1rem;
-    background-color: #eee;
+    background-color: var(--cor-fundo);
     color: #333;
     text-align: center;
 
