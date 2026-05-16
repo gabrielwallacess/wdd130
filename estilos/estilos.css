@@ -34,6 +34,8 @@ nav a {
     color: white;
     padding: 0.5rem;
     display: block;
+    text-decoration: none;
+    padding: 0.5rem
 }
 
 aside {
