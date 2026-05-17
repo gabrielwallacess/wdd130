@@ -1,6 +1,6 @@
 :root {
   --cor-primaria: #197729; /* verde-floresta */
-  --cor-secundaria: #f4a261; /* bege médio */
+  --cor-secundaria: #ffffff; /* bege médio */
   --cor-destaque1: #264653; /* azul-escuro acinzentado */
   --cor-destaque2: #e9c46a; /* amarelo-claro dourado */
   --fonte-titulo: "Times New Roman", "Georgia", serif;
@@ -40,12 +40,12 @@ nav, p, section, article {
 }
 
 nav a {
-  color: white;
+  color: var(--cor-destaque1);
 }
 
 .socialmedia a {
     text-decoration: none;
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
 }
 
 .hero {
