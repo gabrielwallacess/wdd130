@@ -8,8 +8,8 @@
 }
 
 header {
-    background-color: var(--cor-primaria);
-    color: var(--cor-secundaria);
+    background-color: var(--cor-secundaria);
+    color: var(--cor-destaque2);
   }
 
 * {
@@ -45,6 +45,7 @@ nav a {
 
 .socialmedia a {
     text-decoration: none;
+    background-color: var(--cor-primaria);
 }
 
 .hero {
