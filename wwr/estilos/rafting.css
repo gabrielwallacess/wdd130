@@ -1,16 +1,12 @@
 :root {
-  --cor-primaria: #197729; /* verde-floresta */
-  --cor-secundaria: #ffffff; /* bege médio */
-  --cor-destaque1: #264653; /* azul-escuro acinzentado */
-  --cor-destaque2: #34148f; /* amarelo-claro dourado */
-  --fonte-titulo: "Times New Roman", "Georgia", serif;
+  --cor-primaria: #197729;
+  --cor-secundaria: #ffffff;
+  --cor-destaque1: #264653;
+  --cor-destaque2: #34148f;
+
+  --fonte-titulo: "Times New Roman", Georgia, serif;
   --fonte-body: Arial, Helvetica, sans-serif;
 }
-
-header {
-    background-color: var(--cor-secundaria);
-    color: var(--cor-destaque2);
-  }
 
 * {
   margin: 0;
@@ -23,72 +19,136 @@ body {
   color: var(--cor-destaque1);
 }
 
-header, main, footer {
-  width: 840px;
-  margin: 0 auto;
+/* ================= HEADER (GRID) ================= */
+header {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  align-items: center;
+
+  background-color: var(--cor-secundaria);
+  padding: 10px 20px;
 }
 
-h1, h2 {
-  font-family: var(--fonte-titulo);
-  color: var(--cor-primaria);
-  text-align: center;
+header img {
+  width: 100px;
 }
 
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
+/* ================= NAV (FLEX) ================= */
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+
+  list-style: none;
 }
 
 nav a {
+  text-decoration: none;
   color: var(--cor-destaque1);
 }
 
-.socialmedia a {
-    text-decoration: none;
-    background-color: var(--cor-secundaria);
+nav a:hover {
+  text-decoration: underline;
 }
 
+/* ================= MAIN CONTAINER ================= */
+header, main, footer {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+/* ================= HERO ================= */
 .hero {
   position: relative;
 }
 
 .hero img {
-    display: block;
-    width: 100%;
-    height: auto;
+  width: 100%;
+  display: block;
 }
 
-h1 {
+.hero h1 {
   position: absolute;
   top: 20px;
   width: 100%;
-  padding: 16px;
   text-align: center;
-  opacity: 0.7;
-  background-color: var(--cor-destaque1);
-  color: #fff; /* texto branco – certifique-se de que haja contraste suficiente com a cor de fundo */
-}
 
-.hero article img {
-  float: right;
-  width: 120px;
-  height: auto;
-  margin-left: 12px;
-  border-radius: 0px;
+  background-color: rgba(38, 70, 83, 0.7);
+  color: white;
+  padding: 16px;
 }
 
 .hero article {
   position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
 
-  bottom: 20px;       /* posiciona na parte inferior da hero */
-  left: 20px;         /* distância da esquerda */
+  display: flex;
+  gap: 12px;
+  align-items: center;
 
-  width: 90%;         /* controla o tamanho do bloco */
-
-  background-color: rgba(255, 255, 255, 0.85);
-  padding: 5px;
-
-  border-radius: 0px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255,255,255,0.9);
+  padding: 10px;
 }
 
+.hero article img {
+  width: 120px;
+}
+
+/* ================= HISTÓRIA ================= */
+.historia {
+  padding: 20px;
+}
+
+.historia h2 {
+  text-align: center;
+  font-family: var(--fonte-titulo);
+  color: var(--cor-primaria);
+}
+
+/* ================= GALERIA ================= */
+.aventuras {
+  padding: 20px;
+}
+
+.aventuras h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: var(--fonte-titulo);
+  color: var(--cor-primaria);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.gallery figure {
+  text-align: center;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px;
+}
+
+.socialmedia {
+  display: flex;
+  gap: 10px;
+}
+
+.socialmedia img {
+  width: 24px;
+}
