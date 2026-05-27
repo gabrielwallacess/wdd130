@@ -19,7 +19,6 @@ body {
   color: var(--cor-destaque1);
 }
 
-/* ================= HEADER (GRID) ================= */
 header {
   display: grid;
   grid-template-columns: 120px 1fr;
@@ -33,7 +32,6 @@ header img {
   width: 100px;
 }
 
-/* ================= NAV (FLEX) ================= */
 nav ul {
   display: flex;
   justify-content: flex-end;
@@ -51,13 +49,15 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* ================= MAIN CONTAINER ================= */
 header, main, footer {
   max-width: 840px;
   margin: 0 auto;
 }
 
-/* ================= HERO ================= */
+h1 {
+  color: var(--cor-destaque2);
+}
+
 .hero {
   position: relative;
 }
