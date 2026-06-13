@@ -253,3 +253,122 @@ button {
         grid-template-columns: 1fr;
     }
 }
+
+.hero-home {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-message {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(38, 70, 83, 0.7);
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.hero-message h1 {
+    color: white;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.hero-message p {
+    color: white;
+}
+
+
+.hero-home img {
+  width: 100%;
+  display: block;
+}
+
+
+.newsletter,
+.cta {
+  text-align: center;
+  padding: 2rem;
+}
+
+.grid-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.grid-info img {
+  width: 100%;
+  height: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #005f73;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .grid-info {
+    grid-template-columns: 1fr;
+  }
+}
+
+.btn:hover {
+  background-color: var(--cor-primaria);
+}
+
+.cta-passeios {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.passeios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.passeio img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.passeio {
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+
+.tabela-passeios {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: var(--cor-primaria);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .passeios-grid {
+        grid-template-columns: 1fr;
+    }
+}
