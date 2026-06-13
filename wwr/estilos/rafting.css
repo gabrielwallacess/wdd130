@@ -377,3 +377,8 @@ th {
     position: absolute;
     left: -9999px;
 }
+
+.visually-hidden {
+    position: absolute;
+    left: -9999px;
+}
